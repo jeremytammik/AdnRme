@@ -2,7 +2,7 @@
 <RevitAddIns>
   <AddIn Type="Application">
     <Name>AdnRme</Name>
-    <Assembly>C:\a\lib\revit\2014\adn\src\rme\AdnRme\AdnRme\bin\Debug\AdnRme.dll</Assembly>
+    <Assembly>C:\a\lib\revit\2015\adn\src\rme\AdnRme\AdnRme\bin\Debug\AdnRme.dll</Assembly>
     <ClientId>62e0c2bf-02f4-4a95-be8d-4de120048dbb</ClientId>
     <FullClassName>AdnRme.App</FullClassName>
     <VendorId>ADNP</VendorId>
