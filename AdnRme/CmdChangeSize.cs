@@ -82,19 +82,22 @@ namespace AdnRme
         //ElementId categoryId = categoryAirTerminal.Id;
         //ElementIterator it = doc.get_Elements( typeof( Family ) );
 
-        FilteredElementCollector collector = new FilteredElementCollector( doc );
-        collector.OfClass( typeof( Family ) );
+        FilteredElementCollector collector 
+          = new FilteredElementCollector( doc )
+            .OfClass( typeof( Family ) );
 
         foreach( Family family in collector )
         {
-          // family category is not implemented, so check the symbols instead:
+          // Family category is not implemented, 
+          // so check the symbols instead:
 
           bool categoryMatches = false;
           foreach( FamilySymbol symbol in family.Symbols )
           {
-            // in 2008 and even 2009 beta 1, you could compare categories directly:
-
-            //categoryMatches = ( null != symbol.Category && symbol.Category.Equals( categoryAirTerminal ) );
+            // in 2008 and even 2009 beta 1, 
+            // you could compare categories directly:
+            //categoryMatches = ( null != symbol.Category 
+            //  && symbol.Category.Equals( categoryAirTerminal ) );
 
             // in 2009, check the category id instead:
 
@@ -106,16 +109,24 @@ namespace AdnRme
           }
           if( categoryMatches )
           {
-            List<SymbMinMax> familySymbols = new List<SymbMinMax>();
+            List<SymbMinMax> familySymbols 
+              = new List<SymbMinMax>();
+
             foreach( FamilySymbol symbol in family.Symbols )
             {
               SymbMinMax a = new SymbMinMax();
               a.Symbol = symbol;
-              a.Min = Util.GetParameterValueFromName( symbol, ParameterName.MinFlow );
-              a.Max = Util.GetParameterValueFromName( symbol, ParameterName.MaxFlow );
+
+              a.Min = Util.GetParameterValueFromName( 
+                symbol, ParameterName.MinFlow );
+
+              a.Max = Util.GetParameterValueFromName( 
+                symbol, ParameterName.MaxFlow );
+
               familySymbols.Add( a );
             }
-            dictFamilyToSymbols.Add( family.Name, familySymbols );
+            dictFamilyToSymbols.Add( 
+              family.Name, familySymbols );
           }
         }
       }
