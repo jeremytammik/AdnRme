@@ -45,6 +45,7 @@ using System.Runtime.InteropServices;
 //
 // History:
 // 2014-09-02 2015.0.0.2 reformatted before removing obsolete API usage
+// 2014-09-02 2015.0.0.3 removed obsolete API usage, specifically replaced Family.Symbols property by GetFamilySymbolIds
 //
-[assembly: AssemblyVersion( "2015.0.0.2" )]
-[assembly: AssemblyFileVersion( "2015.0.0.2" )]
+[assembly: AssemblyVersion( "2015.0.0.3" )]
+[assembly: AssemblyFileVersion( "2015.0.0.3" )]

@@ -104,14 +104,24 @@ namespace AdnRme
       {
         foreach( FamilyInstance terminal in terminals )
         {
-          // reset flow
+          // Reset flow
+
           Parameter p = Util.GetTerminalFlowParameter( terminal );
           p.Set( 0 );
 
-          // reset size
-          foreach( FamilySymbol sym in terminal.Symbol.Family.Symbols )
+          // Reset size
+
+          ISet<ElementId> symbolIds 
+            = terminal.Symbol.Family
+              .GetFamilySymbolIds();
+
+          foreach( ElementId id in symbolIds )
           {
+            FamilySymbol sym = doc.GetElement( id ) 
+              as FamilySymbol;
+
             terminal.Symbol = sym; // simply set to first symbol found
+
             break; // done after getting the first symbol
           }
           pf.Increment();
