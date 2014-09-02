@@ -88,7 +88,7 @@ namespace AdnRme
 
         foreach( Family family in collector )
         {
-          ISet<ElementId> symbolIds 
+          ISet<ElementId> symbolIds
             = family.GetFamilySymbolIds();
 
           // Family category is not implemented, 
@@ -120,7 +120,7 @@ namespace AdnRme
 
             foreach( ElementId id in symbolIds )
             {
-              FamilySymbol symbol = doc.GetElement( id ) 
+              FamilySymbol symbol = doc.GetElement( id )
                 as FamilySymbol;
 
               SymbMinMax a = new SymbMinMax();
