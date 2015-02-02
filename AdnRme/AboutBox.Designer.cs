@@ -110,7 +110,7 @@ namespace AdnRme
       this.labelCopyright.Name = "labelCopyright";
       this.labelCopyright.Size = new System.Drawing.Size( 312, 17 );
       this.labelCopyright.TabIndex = 21;
-      this.labelCopyright.Text = "Copyright © 2007-2014 by Jeremy Tammik, Autodesk, Inc.";
+      this.labelCopyright.Text = "Copyright © 2007-2015 by Jeremy Tammik, Autodesk, Inc.";
       this.labelCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
       // 
       // labelCompanyName

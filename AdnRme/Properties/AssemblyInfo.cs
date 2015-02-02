@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration( "" )]
 [assembly: AssemblyCompany( "ADN Autodesk Developer Network, Autodesk, Inc." )]
 [assembly: AssemblyProduct( "Revit MEP Sample Application" )]
-[assembly: AssemblyCopyright( "Copyright © 2007-2014 by Jeremy Tammik, Autodesk, Inc." )]
+[assembly: AssemblyCopyright( "Copyright © 2007-2015 by Jeremy Tammik, Autodesk, Inc." )]
 [assembly: AssemblyTrademark( "" )]
 [assembly: AssemblyCulture( "" )]
 
@@ -47,6 +47,7 @@ using System.Runtime.InteropServices;
 // 2014-09-02 2015.0.0.2 reformatted before removing obsolete API usage
 // 2014-09-02 2015.0.0.3 removed obsolete API usage, specifically replaced Family.Symbols property by GetFamilySymbolIds
 // 2014-09-02 2015.0.0.4 bumped the copyright message year from 2013 or whatever to 2014
+// 2015-02-02 2015.0.0.5 bumped the copyright message year from 2014 to 2015
 //
-[assembly: AssemblyVersion( "2015.0.0.4" )]
-[assembly: AssemblyFileVersion( "2015.0.0.4" )]
+[assembly: AssemblyVersion( "2015.0.0.5" )]
+[assembly: AssemblyFileVersion( "2015.0.0.5" )]
