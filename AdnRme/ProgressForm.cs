@@ -55,6 +55,7 @@ namespace AdnRme
     public void Increment()
     {
       ++progressBar1.Value;
+
       if( null != _format )
       {
         label1.Text = string.Format( _format, progressBar1.Value );
