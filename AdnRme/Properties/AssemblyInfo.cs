@@ -48,6 +48,7 @@ using System.Runtime.InteropServices;
 // 2014-09-02 2015.0.0.3 removed obsolete API usage, specifically replaced Family.Symbols property by GetFamilySymbolIds
 // 2014-09-02 2015.0.0.4 bumped the copyright message year from 2013 or whatever to 2014
 // 2015-02-02 2015.0.0.5 bumped the copyright message year from 2014 to 2015
+// 2015-06-04 2016.0.0.0 flat migration to Revit 2016
 //
-[assembly: AssemblyVersion( "2015.0.0.5" )]
-[assembly: AssemblyFileVersion( "2015.0.0.5" )]
+[assembly: AssemblyVersion( "2016.0.0.0" )]
+[assembly: AssemblyFileVersion( "2016.0.0.0" )]
