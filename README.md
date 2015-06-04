@@ -1,14 +1,10 @@
-AdnRme
-======
+# AdnRme
 
 Revit MEP Sample Application for Revit MEP HVAC and electrical
 
-Provided by Jeremy Tammik, Autodesk Inc. and ADN, the Autodesk Developer Network.
-
 Demonstrate use of the Revit API for MEP specific tasks.
 
-HVAC
-----
+## HVAC
 
 Use of the generic Revit API for HVAC specific tasks, using only standard Revit element properties and parameters:
 
@@ -19,17 +15,28 @@ Use of the generic Revit API for HVAC specific tasks, using only standard Revit 
 - Determine unhosted elements.
 - Reset demo.
 
-Electrical
-----------
+## Electrical
 
 Use of the MEP specific API to traverse an electrical system and display its hierarchy in a tree view.
 
 
-Documentation
--------------
+## Documentation
 
-http://thebuildingcoder.typepad.com/blog/2012/05/the-adn-mep-sample-adnrme-for-revit-mep-2013.html
+- [The ADN MEP Sample AdnRme for Revit MEP 2013](http://thebuildingcoder.typepad.com/blog/2012/05/the-adn-mep-sample-adnrme-for-revit-mep-2013.html)
+- [The ADN Sample AdnRme for Revit MEP 2014](http://thebuildingcoder.typepad.com/blog/2013/06/the-adn-sample-adnrme-for-revit-mep-2014.html)
+- [AdnRme Migrated to Revit MEP 2015 on GitHub](http://thebuildingcoder.typepad.com/blog/2014/06/adnrme-migrated-to-revit-mep-2015-on-github.html)
 
-http://thebuildingcoder.typepad.com/blog/2013/06/the-adn-sample-adnrme-for-revit-mep-2014.html
 
-http://thebuildingcoder.typepad.com/blog/2014/06/adnrme-migrated-to-revit-mep-2015-on-github.html
+## Author
+
+- Jeremy Tammik,
+[The Building Coder](http://thebuildingcoder.typepad.com),
+[ADN](http://www.autodesk.com/adn)
+[Open](http://www.autodesk.com/adnopen),
+[Autodesk Inc.](http://www.autodesk.com)
+
+
+## License
+
+This sample is licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Please see the [LICENSE](LICENSE) file for full details.
