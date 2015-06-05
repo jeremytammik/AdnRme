@@ -29,7 +29,7 @@ Use of the MEP specific API to traverse an electrical system and display its hie
 
 ## Author
 
-- Jeremy Tammik,
+Jeremy Tammik,
 [The Building Coder](http://thebuildingcoder.typepad.com),
 [ADN](http://www.autodesk.com/adn)
 [Open](http://www.autodesk.com/adnopen),
