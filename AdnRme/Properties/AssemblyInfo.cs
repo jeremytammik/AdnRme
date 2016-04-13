@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration( "" )]
 [assembly: AssemblyCompany( "ADN Autodesk Developer Network, Autodesk, Inc." )]
 [assembly: AssemblyProduct( "Revit MEP Sample Application" )]
-[assembly: AssemblyCopyright( "Copyright © 2007-2015 by Jeremy Tammik, Autodesk, Inc." )]
+[assembly: AssemblyCopyright( "Copyright © 2007-2016 by Jeremy Tammik, Autodesk, Inc." )]
 [assembly: AssemblyTrademark( "" )]
 [assembly: AssemblyCulture( "" )]
 
@@ -49,6 +49,7 @@ using System.Runtime.InteropServices;
 // 2014-09-02 2015.0.0.4 bumped the copyright message year from 2013 or whatever to 2014
 // 2015-02-02 2015.0.0.5 bumped the copyright message year from 2014 to 2015
 // 2015-06-04 2016.0.0.0 flat migration to Revit 2016
+// 2016-04-13 2016.0.0.1 incremented copyright year from 2015 to 2016
 //
-[assembly: AssemblyVersion( "2016.0.0.0" )]
-[assembly: AssemblyFileVersion( "2016.0.0.0" )]
+[assembly: AssemblyVersion( "2016.0.0.1" )]
+[assembly: AssemblyFileVersion( "2016.0.0.1" )]
