@@ -1,7 +1,7 @@
 #region Header
 // Revit MEP API sample application
 //
-// Copyright (C) 2007-2016 by Jeremy Tammik, Autodesk, Inc.
+// Copyright (C) 2007-2018 by Jeremy Tammik, Autodesk, Inc.
 //
 // Permission to use, copy, modify, and distribute this software
 // for any purpose and without fee is hereby granted, provided
@@ -33,7 +33,7 @@ using Autodesk.Revit.UI;
 
 namespace AdnRme
 {
-  [Transaction( TransactionMode.Automatic )]
+  [Transaction( TransactionMode.Manual )]
   class CmdResetDemo : IExternalCommand
   {
     #region Execute Command
@@ -50,8 +50,13 @@ namespace AdnRme
         UIApplication app = commandData.Application;
         Document doc = app.ActiveUIDocument.Document;
 
-        ResetSupplyAirTerminals( doc );
-        SetSpaceCfmPerSfToZero( doc );
+        using( Transaction tx = new Transaction( doc ) )
+        {
+          tx.Start( "Reset Demo" );
+          ResetSupplyAirTerminals( doc );
+          SetSpaceCfmPerSfToZero( doc );
+          tx.Commit();
+        }
         return Result.Succeeded;
       }
       catch( Exception ex )

@@ -1,7 +1,7 @@
 #region Header
 // Revit MEP API sample application
 //
-// Copyright (C) 2007-2016 by Jeremy Tammik, Autodesk, Inc.
+// Copyright (C) 2007-2018 by Jeremy Tammik, Autodesk, Inc.
 //
 // Permission to use, copy, modify, and distribute this software
 // for any purpose and without fee is hereby granted, provided

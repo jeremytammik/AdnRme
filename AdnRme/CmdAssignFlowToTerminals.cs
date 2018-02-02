@@ -1,7 +1,7 @@
 #region Header
 // Revit MEP API sample application
 //
-// Copyright (C) 2007-2016 by Jeremy Tammik, Autodesk, Inc.
+// Copyright (C) 2007-2018 by Jeremy Tammik, Autodesk, Inc.
 //
 // Permission to use, copy, modify, and distribute this software
 // for any purpose and without fee is hereby granted, provided
@@ -35,7 +35,7 @@ using Autodesk.Revit.UI;
 
 namespace AdnRme
 {
-  [Transaction( TransactionMode.Automatic )]
+  [Transaction( TransactionMode.Manual )]
   class CmdAssignFlowToTerminals : IExternalCommand
   {
     #region Get Terminals Per Space
@@ -174,25 +174,30 @@ namespace AdnRme
         //collector.OfClass( typeof( Space ) );
         //IList<Element> spaces = collector.ToElements();
 
-        List<Space> spaces = Util.GetSpaces( doc );
-        int n = spaces.Count;
-
-        string s = "{0} of " + n.ToString() + " spaces processed...";
-        string caption = "Assign Flow to Terminals";
-
-        using( ProgressForm pf = new ProgressForm( caption, s, n ) )
+        using( Transaction tx = new Transaction( doc ) )
         {
-          foreach( Space space in spaces )
+          List<Space> spaces = Util.GetSpaces( doc );
+          int n = spaces.Count;
+
+          string s = "{0} of " + n.ToString() + " spaces processed...";
+          string caption = "Assign Flow to Terminals";
+          tx.Start( caption );
+
+          using( ProgressForm pf = new ProgressForm( caption, s, n ) )
           {
-            if( terminalsPerSpace.ContainsKey( space.Number ) )
+            foreach( Space space in spaces )
             {
-              AssignFlowToTerminalsForSpace( terminalsPerSpace[space.Number], space );
+              if( terminalsPerSpace.ContainsKey( space.Number ) )
+              {
+                AssignFlowToTerminalsForSpace( terminalsPerSpace[space.Number], space );
+              }
+              pf.Increment();
             }
-            pf.Increment();
           }
+          tx.Commit();
+          Debug.WriteLine( "Completed." );
+          return Result.Succeeded;
         }
-        Debug.WriteLine( "Completed." );
-        return Result.Succeeded;
       }
       catch( Exception ex )
       {
