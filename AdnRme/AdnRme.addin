@@ -2,11 +2,11 @@
 <RevitAddIns>
   <AddIn Type="Application">
     <Name>AdnRme</Name>
-    <Assembly>C:\a\lib\revit\2016\adn\src\rme\AdnRme\AdnRme\bin\Debug\AdnRme.dll</Assembly>
+    <Assembly>C:\a\vs\AdnRme\AdnRme\bin\Debug\AdnRme.dll</Assembly>
     <ClientId>62e0c2bf-02f4-4a95-be8d-4de120048dbb</ClientId>
     <FullClassName>AdnRme.App</FullClassName>
-    <VendorId>ADNP</VendorId>
-    <VendorDescription>Autodesk, Inc. www.autodesk.com</VendorDescription>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
     <VisibilityMode>NotVisibleInArchitecture</VisibilityMode>
     <VisibilityMode>NotVisibleInFamily</VisibilityMode>
     <VisibilityMode>NotVisibleInStructure</VisibilityMode>

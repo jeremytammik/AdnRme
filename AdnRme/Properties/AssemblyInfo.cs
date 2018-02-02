@@ -50,7 +50,7 @@ using System.Runtime.InteropServices;
 // 2015-02-02 2015.0.0.5 bumped the copyright message year from 2014 to 2015
 // 2015-06-04 2016.0.0.0 flat migration to Revit 2016
 // 2016-04-13 2016.0.0.1 incremented copyright year from 2015 to 2016
-// 2018-02-02 2018.0.0.0 migration to Revit 2018, incremented copyright year, eliminated automatic transactions
+// 2018-02-02 2018.0.0.0 migrated to Revit 2018, incremented copyright year, eliminated automatic transactions
 //
 [assembly: AssemblyVersion( "2018.0.0.0" )]
 [assembly: AssemblyFileVersion( "2018.0.0.0" )]
