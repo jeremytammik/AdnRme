@@ -120,7 +120,7 @@ namespace AdnRme
       tv.BeginUpdate();
       PopulateFromMapParentToChildren( tv.Nodes, ElementId.InvalidElementId, map );
       tv.EndUpdate();
-      listBox1.SelectedIndex = 0;
+      //listBox1.SelectedIndex = 0;
     }
     #endregion // Constructor
 
