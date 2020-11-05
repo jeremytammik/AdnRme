@@ -52,6 +52,7 @@ using System.Runtime.InteropServices;
 // 2016-04-13 2016.0.0.1 incremented copyright year from 2015 to 2016
 // 2018-02-02 2018.0.0.0 migrated to Revit 2018, incremented copyright year, eliminated automatic transactions
 // 2018-04-18 2019.0.0.0 migrated to Revit 2019
+// 2020-11-05 2020.0.0.0 migrated to Revit 2020
 //
-[assembly: AssemblyVersion( "2019.0.0.0" )]
-[assembly: AssemblyFileVersion( "2019.0.0.0" )]
+[assembly: AssemblyVersion( "2020.0.0.0" )]
+[assembly: AssemblyFileVersion( "2020.0.0.0" )]
