@@ -53,6 +53,7 @@ using System.Runtime.InteropServices;
 // 2018-02-02 2018.0.0.0 migrated to Revit 2018, incremented copyright year, eliminated automatic transactions
 // 2018-04-18 2019.0.0.0 migrated to Revit 2019
 // 2020-11-05 2020.0.0.0 migrated to Revit 2020
+// 2020-11-05 2021.0.0.0 flat migration to Revit 2021 API produces 11 deprecated API usage warnings
 //
-[assembly: AssemblyVersion( "2020.0.0.0" )]
-[assembly: AssemblyFileVersion( "2020.0.0.0" )]
+[assembly: AssemblyVersion( "2021.0.0.0" )]
+[assembly: AssemblyFileVersion( "2021.0.0.0" )]
