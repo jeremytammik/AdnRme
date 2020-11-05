@@ -225,7 +225,8 @@ namespace AdnRme
       IDictionary<string, List<Element>> mapPanelAndSystemToEquipment )
     {
       MEPModel mepModel = elecEqip.MEPModel;
-      ElectricalSystemSet systems = mepModel.ElectricalSystems;
+      //ElectricalSystemSet systems = mepModel.ElectricalSystems; // 2020
+      ISet<ElectricalSystem> systems = mepModel.GetElectricalSystems(); // 2021
       string s = string.Empty;
       if( null == systems )
       {
@@ -233,7 +234,9 @@ namespace AdnRme
       }
       else
       {
-        Debug.Assert( 1 == systems.Size, "expected equipment to belong to one single panel and system" );
+        Debug.Assert( 1 == systems.Count, 
+          "expected equipment to belong to one single panel and system" );
+
         foreach( ElectricalSystem system in systems )
         {
           if( 0 < s.Length )
@@ -281,10 +284,13 @@ namespace AdnRme
         //
         // determine mapping from panel to circuit == electrical system:
         //
-        Dictionary<string, ElectricalSystemSet> mapPanelToSystems = new Dictionary<string, ElectricalSystemSet>();
+        Dictionary<string, ISet<ElectricalSystem>> mapPanelToSystems 
+          = new Dictionary<string, ISet<ElectricalSystem>>();
+
         IList<Element> systems = Util.GetElectricalSystems( doc );
         n = systems.Count;
-        Debug.WriteLine( string.Format( "Retrieved {0} electrical system{1}.", n, Util.PluralSuffix( n ) ) );
+        Debug.WriteLine( string.Format( "Retrieved {0} electrical system{1}.", 
+          n, Util.PluralSuffix( n ) ) );
         //
         // all circuits which are fed from the same family instance have 
         // the same panel name, so you can retrieve all of these circuits.
@@ -304,9 +310,10 @@ namespace AdnRme
 
           if( !mapPanelToSystems.ContainsKey( panelName ) )
           {
-            mapPanelToSystems.Add( panelName, new ElectricalSystemSet() );
+            mapPanelToSystems.Add( panelName, 
+              new SortedSet<ElectricalSystem>() );
           }
-          mapPanelToSystems[panelName].Insert( system );
+          mapPanelToSystems[panelName].Add( system );
         }
         n = mapPanelToSystems.Count;
         //Debug.WriteLine( string.Format( "Mapping from the {0} panel{1} to systems, system name :circuit name(connectors/unused connectors):", n, Util.PluralSuffix( n ) ) );

@@ -178,7 +178,8 @@ namespace AdnRme
             mapParentToChildren.Add( e.Id, null );
             mapPanel[e.Name] = e;
             MEPModel mepModel = e.MEPModel;
-            ElectricalSystemSet systems2 = mepModel.ElectricalSystems;
+            //ElectricalSystemSet systems2 = mepModel.ElectricalSystems; // 2020
+            ISet<ElectricalSystem> systems2 = mepModel.GetElectricalSystems(); // 2021
             string panelAndSystem = string.Empty;
             if( null == systems2 )
             {
@@ -186,7 +187,9 @@ namespace AdnRme
             }
             else
             {
-              Debug.Assert( 1 == systems2.Size, "expected equipment to belong to one single panel and system" );
+              Debug.Assert( 1 == systems2.Count, 
+                "expected equipment to belong to one single panel and system" );
+
               foreach( ElectricalSystem system in systems2 )
               {
                 if( 0 < panelAndSystem.Length )
@@ -238,14 +241,15 @@ namespace AdnRme
           foreach( FamilyInstance e in equipment )
           {
             MEPModel mepModel = e.MEPModel;
-            ElectricalSystemSet systems2 = mepModel.ElectricalSystems;
+            //ElectricalSystemSet systems2 = mepModel.ElectricalSystems; // 2020
+            ISet<ElectricalSystem> systems2 = mepModel.GetElectricalSystems(); // 2021
             if( null == systems2 )
             {
               mapParentToChildren.Add( nullId, e ); // root node
             }
             else
             {
-              Debug.Assert( 1 == systems2.Size, "expected equipment to belong to one single panel and system" );
+              Debug.Assert( 1 == systems2.Count, "expected equipment to belong to one single panel and system" );
               foreach( ElectricalSystem system in systems2 )
               {
                 mapParentToChildren.Add( system.Id, e );
@@ -277,8 +281,10 @@ namespace AdnRme
               FamilyInstance inst = e as FamilyInstance;
               Debug.Assert( null != inst, "expected all circuit elements to be family instances" );
               MEPModel mepModel = inst.MEPModel;
-              ElectricalSystemSet systems2 = mepModel.ElectricalSystems;
+              //ElectricalSystemSet systems2 = mepModel.ElectricalSystems; // 2020
+              ISet<ElectricalSystem> systems2 = mepModel.GetElectricalSystems(); // 2021
               Debug.Assert( null != systems2, "expected circuit element to belong to an electrical system" );
+              Debug.Assert( 0 < systems2.Count, "expected circuit element to belong to an electrical system" );
 
               // this fails in "2341_MEP - 2009 Central.rvt", says martin:
               //

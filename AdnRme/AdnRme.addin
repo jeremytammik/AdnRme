@@ -2,7 +2,7 @@
 <RevitAddIns>
   <AddIn Type="Application">
     <Name>AdnRme</Name>
-    <Assembly>C:\a\vs\AdnRme\AdnRme\bin\Debug\AdnRme.dll</Assembly>
+    <Assembly>Y:\a\src\rvt\AdnRme\AdnRme\bin\Debug\AdnRme.dll</Assembly>
     <ClientId>62e0c2bf-02f4-4a95-be8d-4de120048dbb</ClientId>
     <FullClassName>AdnRme.App</FullClassName>
     <VendorId>com.typepad.thebuildingcoder</VendorId>
