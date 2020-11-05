@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration( "" )]
 [assembly: AssemblyCompany( "ADN Autodesk Developer Network, Autodesk, Inc." )]
 [assembly: AssemblyProduct( "Revit MEP Sample Application" )]
-[assembly: AssemblyCopyright( "Copyright © 2007-2018 by Jeremy Tammik, Autodesk, Inc." )]
+[assembly: AssemblyCopyright( "Copyright © 2007-2020 by Jeremy Tammik, Autodesk, Inc." )]
 [assembly: AssemblyTrademark( "" )]
 [assembly: AssemblyCulture( "" )]
 
