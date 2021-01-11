@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration( "" )]
 [assembly: AssemblyCompany( "ADN Autodesk Developer Network, Autodesk, Inc." )]
 [assembly: AssemblyProduct( "Revit MEP Sample Application" )]
-[assembly: AssemblyCopyright( "Copyright © 2007-2020 by Jeremy Tammik, Autodesk, Inc." )]
+[assembly: AssemblyCopyright( "Copyright © 2007-2021 by Jeremy Tammik, Autodesk, Inc." )]
 [assembly: AssemblyTrademark( "" )]
 [assembly: AssemblyCulture( "" )]
 
@@ -55,6 +55,7 @@ using System.Runtime.InteropServices;
 // 2020-11-05 2020.0.0.0 migrated to Revit 2020
 // 2020-11-05 2021.0.0.0 flat migration to Revit 2021 API produces 11 deprecated API usage warnings
 // 2020-11-05 2021.0.0.1 eliminated deprecated API usage
+// 2021-01-11 2021.0.0.2 incremented copyright year
 //
-[assembly: AssemblyVersion( "2021.0.0.1" )]
-[assembly: AssemblyFileVersion( "2021.0.0.1" )]
+[assembly: AssemblyVersion( "2021.0.0.2" )]
+[assembly: AssemblyFileVersion( "2021.0.0.2" )]
