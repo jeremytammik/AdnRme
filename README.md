@@ -26,14 +26,25 @@ Use of the generic Revit API for HVAC specific tasks, using only standard Revit 
 
 Use of the MEP specific API to traverse an electrical system and display its hierarchy in a tree view.
 
-
 ## Documentation
 
-- [MEP Sample Code for Revit 2012](https://thebuildingcoder.typepad.com/blog/2011/08/mep-sample-code-for-revit-2012.html)
+- The Building Coder topic group for
+  [The ADN Revit MEP HVAC and Electrical Sample AdnRme](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.40)
+- [The Revit MEP API](http://thebuildingcoder.typepad.com/blog/2009/06/revit-mep-api.html)
 - [MEP Sample Ribbon Panel](http://thebuildingcoder.typepad.com/blog/2009/08/mep-sample-ribbon-panel.html)
+- [The Revit MEP API](http://thebuildingcoder.typepad.com/blog/2009/09/the-revit-mep-api.html)
+- [The Revit MEP 2011 API](http://thebuildingcoder.typepad.com/blog/2010/05/the-revit-mep-2011-api.html)
+- [Voting Open for AU 2010 Sessions](http://thebuildingcoder.typepad.com/blog/2010/05/voting-open-for-au-2010-sessions.html)
+- [AU 2010 Classes](http://thebuildingcoder.typepad.com/blog/2010/09/autodesk-university-2010-classes.html)
+- [Autodesk University 2010 Class Materials](https://thebuildingcoder.typepad.com/blog/2010/11/autodesk-university-2010-class-materials.html)
+  for *CP316-3U All Systems Go in Autodesk Revit MEP Programming*
+- [MEP Sample Code for Revit 2012](https://thebuildingcoder.typepad.com/blog/2011/08/mep-sample-code-for-revit-2012.html)
 - [The ADN MEP Sample AdnRme for Revit MEP 2013](http://thebuildingcoder.typepad.com/blog/2012/05/the-adn-mep-sample-adnrme-for-revit-mep-2013.html)
+- [Updated Revit MEP 2013 Material](http://thebuildingcoder.typepad.com/blog/2012/08/updated-revit-mep-2013-material.html)
+- [AU Classes on the View, MEP and Link APIs](http://thebuildingcoder.typepad.com/blog/2012/11/au-classes-on-the-view-mep-and-link-apis.html)
 - [The ADN Sample AdnRme for Revit MEP 2014](http://thebuildingcoder.typepad.com/blog/2013/06/the-adn-sample-adnrme-for-revit-mep-2014.html)
 - [AdnRme Migrated to Revit MEP 2015 on GitHub](http://thebuildingcoder.typepad.com/blog/2014/06/adnrme-migrated-to-revit-mep-2015-on-github.html)
+- [ArchSample, Active Transaction and AdnRme for 2016](http://thebuildingcoder.typepad.com/blog/2015/06/archsample-active-transaction-and-adnrme-for-revit-mep-2016.html)
 
 ## Author
 
