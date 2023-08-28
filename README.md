@@ -34,7 +34,7 @@ Use of the MEP specific API to traverse an electrical system and display its hie
 - [MEP Sample Ribbon Panel](http://thebuildingcoder.typepad.com/blog/2009/08/mep-sample-ribbon-panel.html)
 - [The Revit MEP API](http://thebuildingcoder.typepad.com/blog/2009/09/the-revit-mep-api.html)
 - [The Revit MEP 2011 API](http://thebuildingcoder.typepad.com/blog/2010/05/the-revit-mep-2011-api.html)
-- [Voting Open for AU 2010 Sessions](http://thebuildingcoder.typepad.com/blog/2010/05/voting-open-for-au-2010-sessions.html)
+- Summary of [AU 2010 Session ID 1573 &ndash; *All Systems Go in Revit MEP Programming*](http://thebuildingcoder.typepad.com/blog/2010/05/voting-open-for-au-2010-sessions.html)
 - [AU 2010 Classes](http://thebuildingcoder.typepad.com/blog/2010/09/autodesk-university-2010-classes.html)
 - [Autodesk University 2010 Class Materials](https://thebuildingcoder.typepad.com/blog/2010/11/autodesk-university-2010-class-materials.html)
   for *CP316-3U All Systems Go in Autodesk Revit MEP Programming*
