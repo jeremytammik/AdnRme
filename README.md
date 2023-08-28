@@ -29,12 +29,11 @@ Use of the MEP specific API to traverse an electrical system and display its hie
 
 ## Documentation
 
+- [MEP Sample Code for Revit 2012](https://thebuildingcoder.typepad.com/blog/2011/08/mep-sample-code-for-revit-2012.html)
 - [MEP Sample Ribbon Panel](http://thebuildingcoder.typepad.com/blog/2009/08/mep-sample-ribbon-panel.html)
 - [The ADN MEP Sample AdnRme for Revit MEP 2013](http://thebuildingcoder.typepad.com/blog/2012/05/the-adn-mep-sample-adnrme-for-revit-mep-2013.html)
 - [The ADN Sample AdnRme for Revit MEP 2014](http://thebuildingcoder.typepad.com/blog/2013/06/the-adn-sample-adnrme-for-revit-mep-2014.html)
 - [AdnRme Migrated to Revit MEP 2015 on GitHub](http://thebuildingcoder.typepad.com/blog/2014/06/adnrme-migrated-to-revit-mep-2015-on-github.html)
-
-
 
 ## Author
 
